@@ -1,0 +1,138 @@
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .profile {
+  background-color: white;
+  width: 260px;
+  height: 70px;
+  margin-right: 50px;
+  border: 1px solid lightgray;
+}
+
+#StudentMain {
+  display: flex;
+  /* height: 800px; */
+  flex: 1;
+  margin: 50px;
+}
+
+#StudentMain .left {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin-right: 20px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+#StudentMain .left .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+}
+
+#StudentMain .left .chart-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+#StudentMain .left .chart-list > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  flex: 1;
+  border-bottom: 1px solid lightgray;
+}
+
+#StudentMain .left .chart-list > div:last-of-type {
+  border-bottom: none;
+}
+
+#StudentMain .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#StudentMain .right .status-bar {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#StudentMain .right .status-bar > div {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+
+#StudentMain .right .status-bar > div:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#StudentMain .right .status-bar > div:last-of-type {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#StudentMain .right .status-bar > div:nth-of-type(odd) {
+  border-right: none;
+}
+
+#StudentMain .right .status-bar > div:nth-of-type(even) {
+  border-left: none;
+}
+
+#StudentMain .right .links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#StudentMain .right .links > div {
+  display: flex;
+  flex: 1;
+}
+
+#StudentMain .right .links > div > div {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+#StudentMain .right .journal {
+  height: 100px;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
